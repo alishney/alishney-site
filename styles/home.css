@@ -1,0 +1,190 @@
+.section__main {
+    padding: 0;
+    margin: 0 1.2rem;
+    height: 40rem;
+    background-image: url("/images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section__main .section__main__overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 197, 209, .5);
+    backdrop-filter: contrast(0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section__main__logo {
+    font-weight: normal;
+    font-family: Garamond, serif;
+    padding: .4rem;
+    user-select: none;
+
+    border: 5px solid #ffffff;
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.section__main__header {
+    color: white;
+    font-size: 4rem;
+}
+
+.section__main__text {
+    color: var(--color-pink);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.section__main__line {
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    margin: 1rem 0;
+}
+
+section:not(:first-child) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+section:not(:first-child) h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+section:not(:first-child) p {
+    color: var(--color-gray-3);
+    width: 400px;
+    padding-left: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+section:not(:first-child) a {
+    font-weight: bold;
+    color: var(--color-pink);
+    font-size: 1.15rem;
+}
+
+section:not(:first-child) a i {
+    color: inherit;
+}
+
+section:not(:first-child):nth-child(even) {
+    padding-left: 20%;
+}
+
+section:not(:first-child):nth-child(odd) {
+    padding-left: 50%;
+}
+
+.section__face {
+    background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0) 10%), url("/images/1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 1.2rem top 1.2rem;
+}
+
+.section__eyes {
+    background-image: url("/images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section__lips {
+    background-image: url("/images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 1.2rem top 1.2rem;
+}
+
+.section__palettes {
+    background-image: url("/images/4.png");
+    background-repeat: no-repeat;
+    background-size: 35rem;
+    background-position: left center;
+}
+
+.section__brushes {
+    background-image: url("/images/5.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 1.2rem top 1.2rem;
+}
+
+@media (max-width: 1000px) {
+    .header__nav {
+        text-align: center;
+    }
+
+    .header__nav__left, .header__nav {
+        flex-direction: column;
+    }
+
+    .header__nav__pages {
+        margin: 1rem;
+    }
+
+    .header__nav__link {
+        margin: 1rem;
+    }
+
+    .section__main {
+        margin: 0;
+    }
+
+    .header__nav__logo, .header__nav__pages, .header__nav__right {
+        margin: 1rem auto;
+    }
+    /*.header__nav__right > * {*/
+    /*    margin-bottom: 1rem;*/
+    /*}*/
+}
+
+@media (max-width: 1300px) {
+    .section__brushes {
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/5.jpg");
+        padding: 4rem 1.2rem !important;
+        text-align: center;
+    }
+
+    .section__face {
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/1.png");
+        padding: 4rem 1.2rem !important;
+        text-align: center;
+    }
+
+    .section__eyes {
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/2.jpg");
+        padding: 4rem 1.2rem !important;
+        text-align: center;
+    }
+
+    .section__lips {
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/3.jpg");
+        padding: 4rem 1.2rem !important;
+        text-align: center;
+    }
+
+    .section__palettes {
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/4.png");
+        padding: 4rem 1.2rem !important;
+        text-align: center;
+    }
+
+    section:not(:first-child) p {
+        margin: 0 auto 2rem;
+        padding: 2rem;
+        background-color: white;
+        width: 70%;
+        border: 10px double #e6e6e6
+    }
+}
