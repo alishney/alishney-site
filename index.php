@@ -2,9 +2,9 @@
 
 $page          = trim($_SERVER['REQUEST_URI'], '/');
 $page_template = __DIR__ . '/pages' . $_SERVER['REQUEST_URI'] . '.html';
-if ( ! file_exists($page_template)) {
-    header('Location: ' . '/home');
-}
+//if ( ! file_exists($page_template)) {
+//    header('Location: ' . '/home');
+//}
 ?>
 
 
