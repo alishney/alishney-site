@@ -94,3 +94,79 @@ a:hover {
 section {
     padding: 1.2rem;
 }
+
+footer {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -1px -9px 20px -12px #bbbbbb;
+    margin-top: 3rem;
+}
+
+.footer__left > a {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+footer button i, footer i {
+    color: inherit;
+}
+
+.footer__left > a:hover {
+    color: var(--color-pink);
+}
+
+.footer__right label {
+    display: flex;
+    align-items: center;
+}
+
+.footer__right input,
+.footer__right input:focus,
+.footer__right input:active {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--color-gray-2);
+    color: var(--color-gray-3);
+    outline: none;
+    font-size: 1rem;
+}
+
+.footer__right label > * {
+    margin: 1rem 1rem;
+}
+
+.footer__right button {
+    background-color: transparent;
+    border: none;
+    color: var(--color-gray-3);
+}
+
+@media (max-width: 800px) {
+    footer, .footer__right label {
+        flex-direction: column;
+    }
+
+    .footer__right {
+        width: 50%;
+    }
+
+    .footer__right label > * {
+        width: 100%;
+    }
+
+    .footer__right label button {
+        width: 100%;
+        text-align: center;
+        background-color: var(--color-pink);
+        padding: .5rem 0;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: .5rem;
+    }
+
+    .footer__left {
+        margin-bottom: 1rem;
+    }
+}

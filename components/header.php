@@ -28,7 +28,7 @@
                     $active_page_class = $site_page_url === $page ? 'header__nav__link__active' : ''
                     ?>
                     <a class="header__nav__link <?= $active_page_class ?>"
-                       href="/<?= $site_page_url ?>"><?= $site_page_name ?></a>
+                       href="?page=<?= $site_page_url ?>"><?= $site_page_name ?></a>
                     <?php
                 } ?>
             </div>

@@ -185,6 +185,7 @@ section:not(:first-child):nth-child(odd) {
         padding: 2rem;
         background-color: white;
         width: 70%;
+        min-width: 400px;
         border: 10px double #e6e6e6
     }
 }
