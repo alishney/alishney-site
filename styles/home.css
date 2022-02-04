@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0 1.2rem;
     height: 40rem;
-    background-image: url("/images/main-banner.jpg");
+    background-image: url("../images/main-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -87,34 +87,34 @@ section:not(:first-child):nth-child(odd) {
 }
 
 .section__face {
-    background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0) 10%), url("/images/1.png");
+    background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0) 10%), url("../images/1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right 1.2rem top 1.2rem;
 }
 
 .section__eyes {
-    background-image: url("/images/2.jpg");
+    background-image: url("../images/2.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .section__lips {
-    background-image: url("/images/3.jpg");
+    background-image: url("../images/3.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right 1.2rem top 1.2rem;
 }
 
 .section__palettes {
-    background-image: url("/images/4.png");
+    background-image: url("../images/4.png");
     background-repeat: no-repeat;
     background-size: 35rem;
     background-position: left center;
 }
 
 .section__brushes {
-    background-image: url("/images/5.jpg");
+    background-image: url("../images/5.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right 1.2rem top 1.2rem;
@@ -151,31 +151,31 @@ section:not(:first-child):nth-child(odd) {
 
 @media (max-width: 1300px) {
     .section__brushes {
-        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/5.jpg");
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/5.jpg");
         padding: 4rem 1.2rem !important;
         text-align: center;
     }
 
     .section__face {
-        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/1.png");
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/1.png");
         padding: 4rem 1.2rem !important;
         text-align: center;
     }
 
     .section__eyes {
-        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/2.jpg");
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/2.jpg");
         padding: 4rem 1.2rem !important;
         text-align: center;
     }
 
     .section__lips {
-        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/3.jpg");
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/3.jpg");
         padding: 4rem 1.2rem !important;
         text-align: center;
     }
 
     .section__palettes {
-        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/images/4.png");
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/4.png");
         padding: 4rem 1.2rem !important;
         text-align: center;
     }
@@ -185,6 +185,7 @@ section:not(:first-child):nth-child(odd) {
         padding: 2rem;
         background-color: white;
         width: 70%;
+        min-width: 400px;
         border: 10px double #e6e6e6
     }
 }

@@ -15,28 +15,27 @@
 <header class="header">
     <nav class="header__nav">
         <div class="header__nav__left">
-            <a href="/">
+            <a href="./index.php?page=home">
                 <div class="header__nav__logo">
                     Alishney Cosmetic Store
                 </div>
             </a>
             <div class="header__nav__pages">
                 <?php
-                foreach (array_slice(scandir('./pages'), 2) as $site_page) {
-                    $site_page_url     = basename($site_page, '.html');
-                    $site_page_name    = ucfirst($site_page_url);
-                    $active_page_class = $site_page_url === $page ? 'header__nav__link__active' : ''
+                $header_pages = ['home' => 'Главная', 'makeup' => 'Косметика', 'contact' => 'Контакты', 'about' => 'О нас'];
+                foreach ($header_pages as $site_page => $site_page_name) {
+                    $active_page_class = $site_page === $page ? 'header__nav__link__active' : ''
                     ?>
                     <a class="header__nav__link <?= $active_page_class ?>"
-                       href="/<?= $site_page_url ?>"><?= $site_page_name ?></a>
+                       href="?page=<?= $site_page ?>"><?= $site_page_name ?></a>
                     <?php
                 } ?>
             </div>
         </div>
         <div class="header__nav__right">
-            <input class="header__nav__search" type="text" placeholder="search">
-            <a class="header__nav__basket" href="#"><i class="fas fa-shopping-cart"></i></a>
-            <a class="header__nav__signin" href="#">Sign in</a>
+            <input class="header__nav__search" type="text" placeholder="Поиск по сайту">
+            <a class="header__nav__basket" href="#" title="Корзина"><i class="fas fa-shopping-cart"></i></a>
+            <a class="header__nav__signin" href="#">Вход</a>
         </div>
     </nav>
 </header>
