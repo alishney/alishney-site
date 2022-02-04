@@ -1,0 +1,88 @@
+main {
+    padding: 0 1.2rem;
+}
+
+.makeup-cards {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.makeup-item-card {
+    flex-basis: 30%;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 1000px) {
+    .makeup-item-card {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .makeup-item-card {
+        flex-basis: 100%;
+    }
+}
+
+.makeup-item-card-img img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.makeup-item-card-img:hover {
+    filter: opacity(.7);
+}
+
+.makeup-item-card-content {
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.makeup-item-card-name {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.makeup-item-card-description {
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.makeup-item-card-rating {
+    margin-bottom: 1.5rem;
+}
+
+.makeup-item-card-rating i {
+    margin: 0 .2rem;
+}
+
+.makeup-item-card-rating i.fas.fa-star {
+    color: var(--color-pink);
+}
+
+.makeup-item-card-price {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.makeup-item-card-buy-button {
+    display: block;
+    padding: 1rem;
+    width: 70%;
+    border: 2px solid var(--color-pink);
+    color: var(--color-pink);
+    border-radius: 1rem;
+    filter: opacity(0.7);
+    margin: 0 auto;
+}
+
+.makeup-item-card-buy-button:hover {
+    filter: none;
+    color: white;
+    background-color: var(--color-pink);
+}

@@ -15,7 +15,7 @@
 <header class="header">
     <nav class="header__nav">
         <div class="header__nav__left">
-            <a href="./index.php?page=home">
+            <a href="./?page=home">
                 <div class="header__nav__logo">
                     Alishney Cosmetic Store
                 </div>
@@ -34,7 +34,7 @@
         </div>
         <div class="header__nav__right">
             <input class="header__nav__search" type="text" placeholder="Поиск по сайту">
-            <a class="header__nav__basket" href="#" title="Корзина"><i class="fas fa-shopping-cart"></i></a>
+            <a class="header__nav__basket" href="./?page=basket" title="Корзина"><i class="fas fa-shopping-cart"></i></a>
             <a class="header__nav__signin" href="#">Вход</a>
         </div>
     </nav>

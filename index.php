@@ -1,7 +1,7 @@
 <?php
 
 $page          = $_GET['page'];
-$page_template = __DIR__ . '/pages/' . $page . '.html';
+$page_template = __DIR__ . '/pages/' . $page . '.php';
 if ( ! file_exists($page_template)) {
     header('Location: ' . '?page=home');
 }

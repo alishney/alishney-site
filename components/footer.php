@@ -7,7 +7,7 @@
         <a href="https://www.instagram.com/makeup.kitchen/?hl=en" title="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
     <div class="footer__right">
-        <form method="get" action="./index.php?page=home">
+        <form method="get" action="./?page=home">
             <label>
                 Подпишитесь на наши новости:
                 <input type="hidden" name="page" value="subscribed">
